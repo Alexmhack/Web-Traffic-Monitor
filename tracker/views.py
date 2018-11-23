@@ -9,6 +9,8 @@ from django.http import JsonResponse
 from pusher import Pusher
 from decouple import config
 
+from pusher import Pusher
+
 pusher = Pusher(
 	app_id=config('PUSHER_APP_ID'),
 	key=config('PUSHER_KEY'),
